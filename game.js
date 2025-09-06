@@ -228,8 +228,9 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     playAgainButton.addEventListener("click", () => {
-        window.location.href = 'web.html';
+        window.location.href = 'index.html';
     });
 
     initializeGame();
+
 });
