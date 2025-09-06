@@ -1,0 +1,263 @@
+body {
+    font-family: 'Inter', sans-serif;
+    background: linear-gradient(135deg, #1a1a2e, #16213e, #0f3460);
+    color: #e0e0e0;
+    min-height: 100vh;
+    margin: 0;
+    overflow-x: hidden; /* Prevent horizontal scroll from confetti */
+}
+
+/* Container */
+.container {
+    max-width: 1200px;
+    background: rgba(31, 31, 58, 0.95);
+    border-radius: 1rem;
+    padding: 2rem;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.6);
+}
+
+/* Title */
+h1 {
+    background: linear-gradient(90deg, #ff5733, #ff8c42);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 2px 2px 8px rgba(255, 87, 51, 0.5);
+}
+
+/* Hero Card (Tile) */
+.hero-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    background: #222244;
+    border-radius: 0.75rem;
+    overflow: hidden;
+    cursor: pointer;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.4);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.hero-card:hover {
+    transform: translateY(-5px) scale(1.03);
+    box-shadow: 0 10px 25px rgba(255, 87, 51, 0.4);
+}
+
+/* Hero Image */
+.hero-image {
+    width: 100%;
+    height: 300px;
+    display: block;
+    border-bottom: 2px solid #ff5733;
+    transition: transform 0.3s ease;
+    object-fit: cover; /* Ensures images cover the area without distortion */
+}
+
+.hero-card:hover .hero-image {
+    transform: scale(1.1);
+}
+
+/* Hero Name always visible */
+.hero-name {
+    width: 100%;
+    padding: 0.5rem;
+    font-weight: bold;
+    text-align: center;
+    font-size: 1rem;
+    background: rgba(0, 0, 0, 0.7);
+    color: #ffcc70;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.8);
+}
+
+/* Buttons */
+.guess-button, .hint-button, .play-again-button {
+    background: linear-gradient(90deg, #ff5733, #ff8c42);
+    border: none;
+    border-radius: 0.75rem;
+    transition: all 0.2s ease-in-out;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+    color: white;
+    cursor: pointer;
+}
+
+.guess-button:hover, .hint-button:hover, .play-again-button:hover {
+    transform: translateY(-5px) scale(1.05);
+    box-shadow: 0 10px 25px rgba(255, 87, 51, 0.6);
+}
+
+.guess-button:active, .hint-button:active, .play-again-button:active {
+    transform: translateY(-2px) scale(0.98);
+    box-shadow: 0 4px 10px rgba(255, 87, 51, 0.5);
+}
+
+
+/* Input */
+.guess-input {
+    background: #1a1a2e;
+    color: #e0e0e0;
+    border-radius: 0.75rem;
+    border: 1px solid #4a4a6e;
+    transition: all 0.3s ease-in-out;
+}
+
+.guess-input:focus {
+    border-color: #ff5733;
+    box-shadow: 0 0 8px rgba(255,87,51,0.6);
+}
+
+/* Timer Animation and Styling */
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.15); }
+    100% { transform: scale(1); }
+}
+
+.timer-display {
+    display: inline-block;
+    font-weight: bold;
+    color: #ffc107; /* Yellow color */
+    transition: color 0.3s ease-in-out;
+    animation: pulse 2s infinite ease-in-out;
+}
+
+.timer-display.danger {
+    color: #ff4d4d; /* Vibrant red color */
+    animation: pulse 0.7s infinite; /* Faster pulse for urgency */
+}
+
+/* --- Full Screen Overlay (Used for both Success and Time's Up) --- */
+.success-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(26, 26, 46, 0.95);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    z-index: 1000;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+    padding: 2rem;
+    box-sizing: border-box;
+}
+
+.success-overlay.visible {
+    opacity: 1;
+}
+
+/* --- Success Text Styling --- */
+@keyframes celebration-animation {
+    0% {
+        transform: scale(0) rotate(360deg);
+        opacity: 0;
+    }
+    30% {
+        transform: scale(1.5) rotate(-15deg);
+        opacity: 1;
+        color: #ffd700;
+        text-shadow: 0 0 30px #ffd700, 0 0 60px #ff8c42;
+    }
+    50% {
+        transform: scale(0.9) rotate(10deg);
+    }
+    70% {
+        transform: scale(1.2) rotate(-5deg);
+        color: #8bc34a;
+        text-shadow: 0 0 30px #8bc34a, 0 0 60px #4CAF50;
+    }
+    100% {
+        transform: scale(1.1) rotate(0deg);
+        opacity: 1;
+        color: #4CAF50;
+        text-shadow: 0 0 25px #4CAF50;
+    }
+}
+
+.success-text {
+    font-weight: 900;
+    text-align: center;
+    color: #4CAF50;
+    font-size: clamp(2rem, 10vw, 7rem);
+    animation: celebration-animation 1.8s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+}
+
+/* --- NEW: Time's Up Text Styling --- */
+@keyframes pop-in {
+    from { transform: scale(0.5); opacity: 0; }
+    to { transform: scale(1); opacity: 1; }
+}
+
+.times-up-heading {
+    font-weight: 900;
+    text-align: center;
+    color: #ffc107; /* Warning yellow */
+    font-size: clamp(3rem, 10vw, 7rem);
+    line-height: 1.1;
+    animation: pop-in 0.8s ease-out forwards;
+}
+
+.times-up-answer {
+    font-weight: 600;
+    text-align: center;
+    color: #e0e0e0;
+    font-size: clamp(1.25rem, 4vw, 2rem);
+    margin-top: 1rem;
+    opacity: 0; /* Start hidden for animation */
+    animation: pop-in 0.8s 0.2s ease-out forwards; /* Delayed pop-in */
+}
+
+
+/* --- Container for bottom buttons --- */
+.success-actions {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    flex-wrap: wrap; 
+    justify-content: center;
+}
+
+/* --- Styling for smaller buttons on overlay --- */
+.success-overlay .play-again-button {
+    margin-top: 0;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    width: auto;
+    min-width: 220px;
+    font-weight: bold;
+}
+
+/* --- Unique style for the random play button --- */
+.random-play-button {
+    background: linear-gradient(90deg, #338bff, #4299e1); /* Blue gradient */
+}
+
+.random-play-button:hover {
+    box-shadow: 0 10px 25px rgba(66, 153, 225, 0.6);
+}
+
+
+/* --- Confetti Enhancements --- */
+.confetti {
+    position: absolute;
+    background-color: #f00;
+    opacity: 0;
+    pointer-events: none;
+    animation: confetti-fall 3s ease-out forwards;
+}
+
+@keyframes confetti-fall {
+    0% {
+        transform: translate(0, 0) rotate(0deg) scale(1);
+        opacity: 1;
+    }
+    100% {
+        transform: translate(var(--x), var(--y)) rotate(var(--deg)) scale(0);
+        opacity: 0;
+    }
+}
