@@ -7,10 +7,10 @@
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="stylesheet.css">
 </head>
-<body class="bg-[#1a1a2e] text-white flex items-center justify-center min-h-screen p-4">
+<body class="flex items-center justify-center min-h-screen p-4">
 
-  <div class="max-w-xl w-full p-6 bg-[#2a2a44] rounded-xl shadow-lg text-center flex flex-col items-center">
-    <h1 id="main-title" class="text-4xl font-bold text-orange-500 mb-4">Guess the Telugu Movie</h1>
+  <div class="game-container max-w-xl w-full p-6 rounded-xl shadow-lg text-center flex flex-col items-center">
+    <h1 id="main-title" class="text-4xl font-bold mb-4">Guess the Telugu Movie</h1>
     <h2 id="hero-title" class="text-2xl font-semibold mb-2">Now playing...</h2>
 
     <div id="timer-container" class="flex justify-center w-full max-w-sm mx-auto mb-4 text-lg">
@@ -37,7 +37,7 @@
         <button id="hint-button" class="hint-button p-3 rounded-lg w-full text-lg font-bold">💡 Hint</button>
     </div>
 
-    <div id="hint-text" class="italic text-gray-300 my-3"></div>
+    <div id="hint-text" class="italic my-3"></div>
     <div id="result-message" class="font-bold text-xl mt-4"></div>
 
     <button id="play-again-button" class="play-again-button hidden p-3 rounded-lg w-full text-lg font-bold mt-4">
