@@ -1,56 +1,79 @@
+/* --- NEW: MODERN COLOR PALETTE & FONTS --- */
+:root {
+    --primary-accent: #DA70D6; /* Orchid */
+    --secondary-accent: #9370DB; /* Medium Purple */
+    --text-primary: #f0f0f0;
+    --text-secondary: #a0a0b0;
+    --danger-color: #ff5252;
+}
+
 body {
     font-family: 'Inter', sans-serif;
-    background: linear-gradient(135deg, #2196f3, #072ac8, #bbdefb);
-    color: #e0e0e0;
+    /* NEW: Attractive Gradient Background */
+    background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+    color: var(--text-primary);
     min-height: 100vh;
     margin: 0;
-    overflow-x: hidden; /* Prevent horizontal scroll from confetti */
+    overflow-x: hidden;
 }
 
-/* Container */
-.container {
-    max-width: 1200px;
-    background: rgba(189, 189, 200, 0.95);
+/* --- NEW: GLASSMORPHISM CONTAINERS --- */
+.container, .game-container {
+    background: rgba(255, 255, 255, 0.05);
     border-radius: 1rem;
     padding: 2rem;
-    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.6);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+}
+.game-container {
+    padding: 1.5rem; /* Slightly less padding for game screen */
 }
 
-/* Title */
+
+/* --- NEW: VIBRANT TITLE STYLING --- */
 h1 {
-    background: linear-gradient(90deg, #ff5733, #ff8c42);
+    background: linear-gradient(90deg, var(--primary-accent), var(--secondary-accent));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    text-shadow: 2px 2px 8px rgba(255, 87, 51, 0.5);
+    text-shadow: 2px 2px 8px rgba(218, 112, 214, 0.3);
 }
 
-/* Hero Card (Tile) */
+p, h2, #hint-text {
+    color: var(--text-secondary);
+}
+
+/* --- NEW: ENHANCED HERO CARD --- */
 .hero-card {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
-    background: #222244;
+    /* NEW: Glassmorphism Card */
+    background: rgba(255, 255, 255, 0.1);
     border-radius: 0.75rem;
     overflow: hidden;
     cursor: pointer;
     box-shadow: 0 6px 15px rgba(0,0,0,0.4);
     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .hero-card:hover {
     transform: translateY(-5px) scale(1.03);
-    box-shadow: 0 10px 25px rgba(255, 87, 51, 0.4);
+    box-shadow: 0 10px 25px rgba(218, 112, 214, 0.4);
+    border-color: rgba(218, 112, 214, 0.7);
 }
 
 /* Hero Image */
 .hero-image {
     width: 100%;
-    height: 300px;
+    aspect-ratio: 2 / 3; /* REPLACED height: 300px; */
     display: block;
-    border-bottom: 2px solid #ff5733;
+    border-bottom: 2px solid var(--primary-accent);
     transition: transform 0.3s ease;
-    object-fit: cover; /* This line is causing the issue */
+    object-fit: cover;
 }
 
 .hero-card:hover .hero-image {
@@ -64,17 +87,16 @@ h1 {
     font-weight: bold;
     text-align: center;
     font-size: 1rem;
-    background: rgba(0, 0, 0, 0.7);
-    color: #ffcc70;
+    background: rgba(0, 0, 0, 0.4);
+    color: var(--text-primary);
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
-    text-shadow: 1px 1px 3px rgba(0,0,0,0.8);
 }
 
-/* Buttons */
+/* --- NEW: STYLISH BUTTONS --- */
 .guess-button, .hint-button, .play-again-button {
-    background: linear-gradient(90deg, #ff5733, #ff8c42);
+    background: linear-gradient(90deg, var(--primary-accent), var(--secondary-accent));
     border: none;
     border-radius: 0.75rem;
     transition: all 0.2s ease-in-out;
@@ -85,27 +107,32 @@ h1 {
 
 .guess-button:hover, .hint-button:hover, .play-again-button:hover {
     transform: translateY(-5px) scale(1.05);
-    box-shadow: 0 10px 25px rgba(255, 87, 51, 0.6);
+    box-shadow: 0 10px 25px rgba(218, 112, 214, 0.6);
 }
 
 .guess-button:active, .hint-button:active, .play-again-button:active {
     transform: translateY(-2px) scale(0.98);
-    box-shadow: 0 4px 10px rgba(255, 87, 51, 0.5);
+    box-shadow: 0 4px 10px rgba(218, 112, 214, 0.5);
 }
 
 
-/* Input */
+/* --- NEW: STYLISH INPUT --- */
 .guess-input {
-    background: #1a1a2e;
-    color: #e0e0e0;
+    background: rgba(0, 0, 0, 0.2);
+    color: var(--text-primary);
     border-radius: 0.75rem;
-    border: 1px solid #4a4a6e;
+    border: 1px solid rgba(255, 255, 255, 0.2);
     transition: all 0.3s ease-in-out;
 }
 
+.guess-input::placeholder {
+    color: var(--text-secondary);
+}
+
 .guess-input:focus {
-    border-color: #ff5733;
-    box-shadow: 0 0 8px rgba(255,87,51,0.6);
+    border-color: var(--primary-accent);
+    box-shadow: 0 0 8px rgba(218, 112, 214, 0.6);
+    background: rgba(0, 0, 0, 0.3);
 }
 
 /* --- HIDE DEFAULT AUDIO PLAYER --- */
@@ -113,7 +140,7 @@ h1 {
     display: none;
 }
 
-/* --- NEW: MUSIC ANIMATION STYLES --- */
+/* --- NEW: UPDATED MUSIC ANIMATION --- */
 #music-animation-container {
     display: flex;
     justify-content: center;
@@ -125,7 +152,7 @@ h1 {
 .bar {
     width: 10px;
     height: 5px;
-    background: linear-gradient(0deg, #ff5733, #ff8c42);
+    background: linear-gradient(0deg, var(--primary-accent), var(--secondary-accent));
     border-radius: 5px;
     animation-name: play-music;
     animation-duration: 1.2s;
@@ -172,7 +199,7 @@ h1 {
 }
 
 .timer-display.danger {
-    color: #ff4d4d; /* Vibrant red color */
+    color: var(--danger-color); /* Vibrant red color */
     animation: pulse 0.7s infinite; /* Faster pulse for urgency */
 }
 
@@ -183,7 +210,9 @@ h1 {
     left: 0;
     width: 100vw;
     height: 100vh;
-    background-color: rgba(26, 26, 46, 0.95);
+    background-color: rgba(15, 12, 41, 0.8); /* Dark purple overlay */
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -209,7 +238,7 @@ h1 {
         transform: scale(1.5) rotate(-15deg);
         opacity: 1;
         color: #ffd700;
-        text-shadow: 0 0 30px #ffd700, 0 0 60px #ff8c42;
+        text-shadow: 0 0 30px #ffd700, 0 0 60px var(--primary-accent);
     }
     50% {
         transform: scale(0.9) rotate(10deg);
@@ -235,7 +264,7 @@ h1 {
     animation: celebration-animation 1.8s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
 }
 
-/* --- NEW: Time's Up Text Styling --- */
+/* --- Time's Up Text Styling --- */
 @keyframes pop-in {
     from { transform: scale(0.5); opacity: 0; }
     to { transform: scale(1); opacity: 1; }
@@ -253,7 +282,7 @@ h1 {
 .times-up-answer {
     font-weight: 600;
     text-align: center;
-    color: #e0e0e0;
+    color: var(--text-primary);
     font-size: clamp(1.25rem, 4vw, 2rem);
     margin-top: 1rem;
     opacity: 0; /* Start hidden for animation */
