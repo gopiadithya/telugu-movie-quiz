@@ -8,6 +8,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const resultMessage = document.getElementById("result-message");
     const playAgainButton = document.getElementById("play-again-button");
     const timerElement = document.getElementById("timer");
+    const musicAnimationContainer = document.getElementById("music-animation-container"); // New element
     
     const timerContainer = document.getElementById("timer-container");
     const buttonsContainer = document.getElementById("buttons-container");
@@ -37,6 +38,7 @@ document.addEventListener('DOMContentLoaded', () => {
             if (timeLeft <= 0) {
                 clearInterval(timerInterval);
                 audioPlayer.pause();
+                musicAnimationContainer.classList.remove('playing'); // Stop animation
                 showTimesUpScreen(currentSong.answer);
             }
         }, 1000);
@@ -47,6 +49,7 @@ document.addEventListener('DOMContentLoaded', () => {
         timeLeft = Math.max(20, Math.min(songDuration, 45));
         startTimer();
         audioPlayer.play();
+        musicAnimationContainer.classList.add('playing'); // Start animation
     });
 
     function initializeGame() {
@@ -54,7 +57,7 @@ document.addEventListener('DOMContentLoaded', () => {
             mainTitle.classList.remove('hidden'); 
             heroTitle.classList.remove('hidden');
             timerContainer.classList.remove('hidden');
-            audioPlayer.classList.remove('hidden');
+            musicAnimationContainer.classList.remove('hidden'); // Show animation container
             guessInput.classList.remove('hidden');
             buttonsContainer.classList.remove('hidden');
             hintText.classList.remove('hidden');
@@ -65,6 +68,7 @@ document.addEventListener('DOMContentLoaded', () => {
             buttonsContainer.querySelector('#guess-button').disabled = false;
             timerElement.textContent = '...';
             timerElement.classList.remove('danger');
+            musicAnimationContainer.classList.remove('playing'); // Ensure animation is stopped initially
             audioPlayer.src = currentSong.file;
             
             resultMessage.innerText = "";
@@ -205,6 +209,7 @@ document.addEventListener('DOMContentLoaded', () => {
         // 3. Compare the two normalized strings.
         if (normalizedGuess === normalizedAnswer) {
             audioPlayer.pause();
+            musicAnimationContainer.classList.remove('playing'); // Stop animation
             clearInterval(timerInterval);
             showSuccessScreen();
         } else {
@@ -232,5 +237,4 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     initializeGame();
-
 });
