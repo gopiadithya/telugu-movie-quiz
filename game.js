@@ -80,14 +80,40 @@ document.addEventListener('DOMContentLoaded', () => {
         }, 1000);
     }
 
-    audioPlayer.addEventListener('loadedmetadata', () => {
-        const songDuration = Math.floor(audioPlayer.duration);
-        timeLeft = Math.max(20, Math.min(songDuration, 45));
-        initialTimeLeft = timeLeft; // Store the starting time for score calculation
-        startTimer();
-        audioPlayer.play();
-        musicAnimationContainer.classList.add('playing'); 
-    });
+   audioPlayer.addEventListener('loadedmetadata', () => {
+    const songDuration = Math.floor(audioPlayer.duration);
+
+    // Default to no replay
+    audioPlayer.onended = null; 
+
+    // 1. Logic for short songs (≤ 16 seconds)
+    if (songDuration <= 16) {
+        timeLeft = songDuration * 2; // Set timer for two full playthroughs
+        let hasReplayed = false;
+        
+        // When the song ends the first time, this function will replay it once
+        audioPlayer.onended = () => {
+            if (!hasReplayed) {
+                hasReplayed = true;
+                audioPlayer.currentTime = 0;
+                audioPlayer.play();
+            }
+        };
+
+    // 2. Logic for long songs (> 45 seconds)
+    } else if (songDuration > 45) {
+        timeLeft = 40; // Cap the timer (and playback) at 40 seconds
+
+    // 3. Logic for medium songs (17 to 45 seconds)
+    } else {
+        timeLeft = songDuration; // Set timer to the song's actual length
+    }
+
+    initialTimeLeft = timeLeft;
+    startTimer();
+    audioPlayer.play();
+    musicAnimationContainer.classList.add('playing'); 
+});
 
     function initializeGame() {
         const recordLabel = document.getElementById('record-label');
