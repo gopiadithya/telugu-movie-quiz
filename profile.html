@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="stylesheet.css">
+</head>
+<body class="login-body flex-col">
+
+    <a href="heros.html" class="home-button">🏠</a>
+
+    <h1 class="page-title text-6xl md:text-7xl font-bold mb-8 mt-8">Guess the Telugu Movie</h1>
+
+    <div class="profile-container text-center">
+        <div class="profile-header">
+            <div class="avatar-wrapper">
+                <img src="https://via.placeholder.com/150/505050/FFFFFF?text=👤" alt="User Avatar" class="avatar" id="profile-avatar">
+            </div>
+            <h2 class="username" id="profile-username">Guest User</h2>
+            <p class="user-email">guest@example.com</p>
+        </div>
+
+        <div class="profile-stats">
+            <div class="stat-item">
+                <h3>High Score</h3>
+                <p class="stat-value" id="high-score-display">0</p>
+            </div>
+            <div class="stat-item">
+                <h3>Leaderboard Rank</h3>
+                <p class="stat-value"># --</p>
+            </div>
+        </div>
+
+        <button id="logout-button" class="logout-button action-button">
+            Logout
+        </button>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const profileAvatar = document.getElementById('profile-avatar');
+            const profileUsername = document.getElementById('profile-username');
+            const highScoreDisplay = document.getElementById('high-score-display');
+            const logoutButton = document.getElementById('logout-button');
+
+            function loadProfile() {
+                const savedAvatar = localStorage.getItem('userAvatar');
+                const savedUsername = localStorage.getItem('userName');
+                const highScore = localStorage.getItem('movieGuessHighScore') || '0';
+
+                if (savedAvatar) {
+                    profileAvatar.src = savedAvatar;
+                }
+                if (savedUsername) {
+                    profileUsername.textContent = savedUsername;
+                }
+                highScoreDisplay.textContent = highScore;
+            }
+
+            logoutButton.addEventListener('click', () => {
+                window.location.href = 'index.html';
+            });
+
+            loadProfile();
+        });
+    </script>
+</body>
+</html>
