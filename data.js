@@ -386,7 +386,7 @@ const heroesData = {
         ]
     },
     "Vijay": {
-        image: 'photos/vijay.jpeg',
+        image: 'photos/vijaytala.jpeg',
         songs: [
             { file: "songs/vijay/master.mp3", answer: "Master", hint: "A professor is sent to a juvenile correctional facility." },
             { file: "songs/vijay/leo.mp3", answer: "Leo", hint: "A cafe owner with a violent past is hunted by a drug cartel." },
@@ -416,4 +416,5 @@ const heroesData = {
         ]
     }
 };
+
 
