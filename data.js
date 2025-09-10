@@ -240,7 +240,7 @@ const heroesData = {
         ]
     },
     "Siddharth": {
-        image: 'photos/Siddharth.jpeg',
+        image: 'photos/siddharth.jpeg',
         songs: [
             { file: "songs/siddharth/bommarillu.mp3", answer: "Bommarillu", hint: "A classic film about a father-son relationship." },
             { file: "songs/siddharth/nuvvostanante.mp3", answer: "Nuvvostanante Nenoddantana", hint: "The hero must prove his love by farming." },
@@ -364,6 +364,55 @@ const heroesData = {
             { file: "songs/karthi/ponniyinselvan.mp3", answer: "Ponniyin Selvan", hint: "A historical epic directed by Mani Ratnam where he plays Vallavaraiyan." },
             { file: "songs/karthi/sulthan.mp3", answer: "Sulthan", hint: "An action film where a man has to manage 100 goons." }
         ]
+    },
+    "Balakrishna": {
+        image: 'photos/balakrishna.jpeg',
+        songs: [
+            { file: "songs/balakrishna/simha.mp3", answer: "Simha", hint: "A powerful comeback film directed by Boyapati Srinu." },
+            { file: "songs/balakrishna/legend.mp3", answer: "Legend", hint: "Famous for its powerful dialogues and action sequences." },
+            { file: "songs/balakrishna/narasimhanaidu.mp3", answer: "Narasimha Naidu", hint: "A blockbuster faction film from the early 2000s." },
+            { file: "songs/balakrishna/samarasimhareddy.mp3", answer: "Samarasimha Reddy", hint: "A trendsetting faction film that became an industry hit." },
+            { file: "songs/balakrishna/akhanda.mp3", answer: "Akhanda", hint: "A recent spiritual action-thriller featuring a dual role." }
+        ]
+    },
+    "Dhanush": {
+        image: 'photos/dhanush.jpeg',
+        songs: [
+            { file: "songs/dhanush/raghuvaranbtech.mp3", answer: "Raghuvaran B.Tech", hint: "The story of an unemployed civil engineering graduate." },
+            { file: "songs/dhanush/sir.mp3", answer: "SIR", hint: "A bilingual film where he plays a junior lecturer fighting for education." },
+            { file: "songs/dhanush/karnan.mp3", answer: "Karnan", hint: "A raw drama about a man fighting for the rights of his oppressed village." },
+            { file: "songs/dhanush/maari.mp3", answer: "Maari", hint: "Known for the catchphrase 'Senjiruven'." },
+            { file: "songs/dhanush/asuran.mp3", answer: "Asuran", hint: "A critically acclaimed revenge drama directed by Vetrimaaran." }
+        ]
+    },
+    "Vijay": {
+        image: 'photos/vijay.jpeg',
+        songs: [
+            { file: "songs/vijay/master.mp3", answer: "Master", hint: "A professor is sent to a juvenile correctional facility." },
+            { file: "songs/vijay/leo.mp3", answer: "Leo", hint: "A cafe owner with a violent past is hunted by a drug cartel." },
+            { file: "songs/vijay/bigil.mp3", answer: "Bigil", hint: "A football player turned gangster coaches a women's football team." },
+            { file: "songs/vijay/mersal.mp3", answer: "Mersal", hint: "He plays a triple role, including a doctor and a magician." },
+            { file: "songs/vijay/thuppakki.mp3", answer: "Thuppakki", hint: "An army captain on leave hunts down a terrorist network in Mumbai." }
+        ]
+    },
+    "Kamal Haasan": {
+        image: 'photos/kamal.jpeg',
+        songs: [
+            { file: "songs/kamalhaasan/vikram.mp3", answer: "Vikram", hint: "A blockbuster action film that's part of the Lokesh Kanagaraj Cinematic Universe." },
+            { file: "songs/kamalhaasan/dasavatharam.mp3", answer: "Dasavatharam", hint: "A film where he plays ten distinct roles." },
+            { file: "songs/kamalhaasan/bharateeyudu.mp3", answer: "Bharateeyudu", hint: "An ex-freedom fighter targets corrupt officials." },
+            { file: "songs/kamalhaasan/nayakudu.mp3", answer: "Nayakudu", hint: "A Mani Ratnam classic about a man who becomes a powerful Mumbai don." },
+            { file: "songs/kamalhaasan/panchathanthiram.mp3", answer: "Panchathanthiram", hint: "A classic comedy of errors involving four friends." }
+        ]
+    },
+    "Adivi Sesh": {
+        image: 'photos/adivisesh.jpeg',
+        songs: [
+            { file: "songs/adivisesh/major.mp3", answer: "Major", hint: "A biographical film based on the life of Major Sandeep Unnikrishnan." },
+            { file: "songs/adivisesh/goodachari.mp3", answer: "Goodachari", hint: "A spy thriller where the protagonist is framed for a crime." },
+            { file: "songs/adivisesh/evaru.mp3", answer: "Evaru", hint: "A remake of 'The Invisible Guest', a gripping crime thriller." },
+            { file: "songs/adivisesh/kshanam.mp3", answer: "Kshanam", hint: "A man searches for his ex-girlfriend's missing daughter." },
+            { file: "songs/adivisesh/hit2.mp3", answer: "HIT: The Second Case", hint: "A cool-headed cop hunts down a brutal serial killer." }
+        ]
     }
-
 };
