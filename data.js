@@ -443,7 +443,7 @@ const heroesData = {
         ]
     },
     "Manchu Manoj": {
-        image: 'photos/manoj.jpeg',
+        image: 'photos/manoj.jpg',
         songs: [
             { file: "songs/manchumanoj/donga_dongadi.mp3", answer: "Donga Dongadi", hint: "His debut film as a lead, a remake of the Tamil film 'Thiruda Thirudi'." },
             { file: "songs/manchumanoj/bindaas.mp3", answer: "Bindaas", hint: "An action-comedy where the hero must live in his rival's house for a challenge." },
@@ -456,7 +456,7 @@ const heroesData = {
         ]
     },
     "Manchu Vishnu": {
-        image: 'photos/vishnu.jpeg',
+        image: 'photos/vishnu.jpg',
         songs: [
             { file: "songs/manchuvishnu/vishnu.mp3", answer: "Vishnu", hint: "His action-packed debut film directed by Shaji Kailas." },
             { file: "songs/manchuvishnu/dhee.mp3", answer: "Dhee", hint: "A blockbuster action-comedy where he challenges a gangster to win his sister's love." },
@@ -469,7 +469,7 @@ const heroesData = {
         ]
     },
     "Raj Tarun": {
-        image: 'photos/rajtharun.jpeg',
+        image: 'photos/rajtharun.jpg',
         songs: [
             { file: "songs/rajtharun/uyyala_jampala.mp3", answer: "Uyyala Jampala", hint: "His debut hit, a charming love story between childhood sweethearts in a village." },
             { file: "songs/rajtharun/cinema_choopistha_mava.mp3", answer: "Cinema Choopistha Mava", hint: "The hero takes on a challenge to impress his lover's strict father." },
@@ -483,3 +483,4 @@ const heroesData = {
     },
 
 };
+
