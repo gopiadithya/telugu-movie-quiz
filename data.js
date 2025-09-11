@@ -17,7 +17,7 @@ const heroesData = {
     "Mahesh Babu": {
         image: 'photos/mahesh.jpeg',
         songs: [
-            { file: "songs/mahesh/pokiri.mp3", answer: "Pokiri", hint: "A blockbuster where the hero is an undercover cop." },
+            { file: "songs/mahesh/pokiri.mp3", answer: "Pokiri", hint: "A Puri Jagannadh blockbuster about a ruthless gangster with a hidden identity." },
             { file: "songs/mahesh/srimanthudu.mp3", answer: "Srimanthudu", hint: "The protagonist adopts a village to develop it." },
             { file: "songs/mahesh/Nenokkadine.mp3", answer: "Nenokkadine", hint: "A psychological thriller where a rockstar seeks revenge for his parents' death." },
             { file: "songs/mahesh/businessman.mp3", answer: "Businessman", hint: "The hero arrives in Mumbai with the goal of becoming a mafia don." },
@@ -33,7 +33,7 @@ const heroesData = {
         image: 'photos/alluarjun.jpeg',
         songs: [
             { file: "songs/alluarjun/pushpa.mp3", answer: "Pushpa", hint: "Famous for the tagline: 'Thaggede Le!'" },
-            { file: "songs/alluarjun/alavaikunthapurramuloo.mp3", answer: "Ala Vaikunthapurramuloo", hint: "A family entertainer directed by Trivikram." },
+            { file: "songs/alluarjun/alavaikunthapurramuloo.mp3", answer: "Ala Vaikunthapurramuloo", hint: "A Trivikram directorial where the hero discovers he was swapped at birth." },
             { file: "songs/alluarjun/arya.mp3", answer: "Arya", hint: "A story about a man with a one-sided love philosophy." },
             { file: "songs/alluarjun/racegurram.mp3", answer: "Race Gurram", hint: "Two brothers, one a cop and one a happy-go-lucky guy, team up." },
             { file: "songs/alluarjun/naaperusuryanaaliiuindia.mp3", answer: "NaaPeruSuryaNaaIlluIndia", hint: "A soldier with anger issues must get a psychologist's approval to return to the border." },
@@ -48,7 +48,7 @@ const heroesData = {
         image: 'photos/ramcharan.jpeg',
         songs: [
             { file: "songs/ramcharan/magadheera.mp3", answer: "Magadheera", hint: "A historical reincarnation drama." },
-            { file: "songs/ramcharan/rrr.mp3", answer: "RRR", hint: "Features the friendship of Komaram Bheem & Alluri Sitarama Raju." },
+            { file: "songs/ramcharan/rrr.mp3", answer: "RRR", hint: "Plays the role of the fiery revolutionary, Alluri Sitarama Raju." },
             { file: "songs/ramcharan/rangasthalam.mp3", answer: "Rangasthalam", hint: "A partially deaf man fights against a corrupt village president." },
             { file: "songs/ramcharan/dhruva.mp3", answer: "Dhruva", hint: "A remake of 'Thani Oruvan' where a cop targets a powerful scientist." },
             { file: "songs/ramcharan/chirutha.mp3", answer: "Chirutha", hint: "The hero's debut film, directed by Puri Jagannadh." },
@@ -234,13 +234,13 @@ const heroesData = {
             { file: "songs/nagachaitanya/manan.mp3", answer: "Manam", hint: "Features three generations of the Akkineni family." },
             { file: "songs/nagachaitanya/lovestory.mp3", answer: "Love Story", hint: "A dance-based romantic drama directed by Sekhar Kammula." },
             { file: "songs/nagachaitanya/bangarraju.mp3", answer: "Bangarraju", hint: "A fantasy drama sequel also starring his father, Nagarjuna." },
-            { file: "songs/nagachaitanya/savyasachi.mp3", answer: "Savyasachi", hint: "The hero's debut film focusing on student politics." },
-            { file: "songs/nagachaitanya/rarandoivedukachudham.mp3", answer: "Rarandoi Veduka Chudham", hint: "An action thriller where a constable must protect a witness." },
-            { file: "songs/nagachaitanya/thandel.mp3", answer: "Thandel", hint: "A remake of the Tamil film 'Vettai'." }
+            { file: "songs/nagachaitanya/savyasachi.mp3", answer: "Savyasachi", hint: "A film about a man whose left hand is controlled by his absorbed twin." },
+            { file: "songs/nagachaitanya/rarandoivedukachudham.mp3", answer: "Rarandoi Veduka Chudham", hint: "A family entertainer about navigating love and family disputes during wedding celebrations." },
+            { file: "songs/nagachaitanya/thandel.mp3", answer: "Thandel", hint: "Based on real events about a fisherman from Srikakulam captured by the Pakistani navy." }
         ]
     },
     "Siddharth": {
-        image: 'photos/Siddharth.jpeg',
+        image: 'photos/siddharth.jpeg',
         songs: [
             { file: "songs/siddharth/bommarillu.mp3", answer: "Bommarillu", hint: "A classic film about a father-son relationship." },
             { file: "songs/siddharth/nuvvostanante.mp3", answer: "Nuvvostanante Nenoddantana", hint: "The hero must prove his love by farming." },
@@ -262,8 +262,8 @@ const heroesData = {
             { file: "songs/sharwanand/expressraja.mp3", answer: "Express Raja", hint: "A comedy of errors involving a man, a dog, and a diamond." },
             { file: "songs/sharwanand/sathamanambhavati.mp3", answer: "Sathamanam Bhavati", hint: "A national award-winning film about family values." },
             { file: "songs/sharwanand/jaanu.mp3", answer: "Jaanu", hint: "A remake of the Tamil classic '96'." },
-            { file: "songs/sharwanand/gamyam.mp3", answer: "Gamyam", hint: "A journey of self-discovery for two unlikely companions." },
-            { file: "songs/sharwanand/prasthanam.mp3", answer: "Prasthanam", hint: "A critically acclaimed political action drama." },
+            { file: "songs/sharwanand/Ranarangam.mp3", answer: "Ranarangam", hint: "A stylish action drama with a gripping storyline." },
+            { file: "songs/sharwanand/mahasamudram.mp3", answer: "Maha Samudram", hint: "A multi-starrer action drama with a gripping storyline." },
             { file: "songs/sharwanand/okeokajeevitham.mp3", answer: "Oke Oka Jeevitham", hint: "A sci-fi film about traveling back in time to change the past." },
             { file: "songs/sharwanand/sreekaram.mp3", answer: "Sreekaram", hint: "A software engineer returns to his village to take up farming." },
             { file: "songs/sharwanand/padi.mp3", answer: "Padi Padi Leche Manasu", hint: "A love story set in Kolkata with a memory-loss twist." }
@@ -273,15 +273,15 @@ const heroesData = {
         image: 'photos/gopi.jpeg',
         songs: [
             { file: "songs/gopichand/loukyam.mp3", answer: "Loukyam", hint: "A successful comedy entertainer where the hero is known for his wit." },
-            { file: "songs/gopichand/sahasam.mp3", answer: "Sahasam", hint: "An adventure film about a treasure hunt for diamonds." },
-            { file: "songs/gopichand/lakshyam.mp3", answer: "Lakshyam", hint: "An honest cop and his protective elder brother." },
+            { file: "songs/gopichand/gouthamnanda.mp3", answer: "Goutham Nanda", hint: "A billionaire swaps his life with a poor lookalike to understand its value." },
+            { file: "songs/gopichand/golimaar.mp3", answer: "Golimaar", hint: "Based on the life of encounter specialist Daya Nayak, directed by Puri Jagannadh." },
             { file: "songs/gopichand/yagnam.mp3", answer: "Yagnam", hint: "The hero is a loyal henchman to a faction leader." },
             { file: "songs/gopichand/souryam.mp3", answer: "Souryam", hint: "A man pretends to be a coward to hide his past as a cop." },
             { file: "songs/gopichand/jil.mp3", answer: "Jil", hint: "A stylish action film where a fire officer takes on a don." },
             { file: "songs/gopichand/seetimaarr.mp3", answer: "Seetimaarr", hint: "A sports action film where he plays a Kabaddi coach." },
             { file: "songs/gopichand/ranam.mp3", answer: "Ranam", hint: "A love story set in a village with factional disputes." },
-            { file: "songs/gopichand/andhrudu.mp3", answer: "Andhrudu", hint: "The hero is a sincere police officer fighting corruption." },
-            { file: "songs/gopichand/jayam.mp3", answer: "Jayam", hint: "A film where he plays the iconic villain role." }
+            { file: "songs/gopichand/Oxygen.mp3", answer: "Oxygen", hint: "An army officer in disguise seeks revenge on a corporate company for his family's demise." },
+            { file: "songs/gopichand/chanakya.mp3", answer: "Chanakya", hint: "The hero plays an undercover RAW agent on a mission to capture a terrorist." }
         ]
     },
     "Akhil Akkineni": {
@@ -414,7 +414,27 @@ const heroesData = {
             { file: "songs/adivisesh/kshanam.mp3", answer: "Kshanam", hint: "A man searches for his ex-girlfriend's missing daughter." },
             { file: "songs/adivisesh/hit2.mp3", answer: "HIT: The Second Case", hint: "A cool-headed cop hunts down a brutal serial killer." }
         ]
+    },
+    "Rana Daggubati": {
+        image: 'photos/rana.jpeg',
+        songs: [
+            { file: "songs/rana/baahubali.mp3", answer: "Baahubali", hint: "Plays the iconic antagonist Bhallaladeva in this epic." },
+            { file: "songs/rana/leader.mp3", answer: "Leader", hint: "His debut film, a political drama directed by Sekhar Kammula." },
+            { file: "songs/rana/ghazi.mp3", answer: "Ghazi", hint: "India's first underwater war film, based on the sinking of PNS Ghazi." },
+            { file: "songs/rana/nenerajunenemantri.mp3", answer: "Nene Raju Nene Mantri", hint: "A political thriller where his character's name is Jogendra." },
+            { file: "songs/rana/bheemlanayak.mp3", answer: "Bheemla Nayak", hint: "Co-starred with Pawan Kalyan in this remake of 'Ayyappanum Koshiyum'." },
+            { file: "songs/rana/kvj.mp3", answer: "Krishnam Vande Jagadgurum", hint: "An action-drama where he plays a theatre artist from Surabhi." }
+        ]
+    },
+    "Suhas": {
+        image: 'photos/suhas.jpeg',
+        songs: [
+            { file: "songs/suhas/colourphoto.mp3", answer: "Colour Photo", hint: "A period romantic drama that won the National Film Award for Best Feature Film in Telugu." },
+            { file: "songs/suhas/writerpadmabhushan.mp3", answer: "Writer Padmabhushan", hint: "A comedy-drama about a struggling writer from Vijayawada." },
+            { file: "songs/suhas/ambajipeta.mp3", answer: "Ambajipeta Marriage Band", hint: "A recent blockbuster where he plays a barber and a band member." },
+            { file: "songs/suhas/hit2.mp3", answer: "HIT: The Second Case", hint: "He played an unexpected and chilling antagonist role in this crime thriller." },
+            { file: "songs/suhas/familydrama.mp3", answer: "Family Drama", hint: "A dark thriller where he and his brother have sinister intentions." },
+            { file: "songs/suhas/prasannavadanam.mp3", answer: "Prasanna Vadanam", hint: "A recent thriller where the protagonist suffers from face blindness." }
+        ]
     }
 };
-
-
