@@ -240,7 +240,7 @@ const heroesData = {
         ]
     },
     "Siddharth": {
-        image: 'photos/Siddharth.jpeg',
+        image: 'photos/siddharth.jpeg',
         songs: [
             { file: "songs/siddharth/bommarillu.mp3", answer: "Bommarillu", hint: "A classic film about a father-son relationship." },
             { file: "songs/siddharth/nuvvostanante.mp3", answer: "Nuvvostanante Nenoddantana", hint: "The hero must prove his love by farming." },
@@ -370,9 +370,14 @@ const heroesData = {
         songs: [
             { file: "songs/balakrishna/simha.mp3", answer: "Simha", hint: "A powerful comeback film directed by Boyapati Srinu." },
             { file: "songs/balakrishna/legend.mp3", answer: "Legend", hint: "Famous for its powerful dialogues and action sequences." },
-            { file: "songs/balakrishna/narasimhanaidu.mp3", answer: "Narasimha Naidu", hint: "A blockbuster faction film from the early 2000s." },
+            { file: "songs/balakrishna/narasimhanaidu.mp3", answer: "Narasimha Naidu", hint: "A blockbuster faction film from the early 2000s that won him a Nandi Award for Best Actor." },
             { file: "songs/balakrishna/samarasimhareddy.mp3", answer: "Samarasimha Reddy", hint: "A trendsetting faction film that became an industry hit." },
-            { file: "songs/balakrishna/akhanda.mp3", answer: "Akhanda", hint: "A recent spiritual action-thriller featuring a dual role." }
+            { file: "songs/balakrishna/akhanda.mp3", answer: "Akhanda", hint: "A recent spiritual action-thriller featuring a dual role as an Aghora." },
+            { file: "songs/balakrishna/aditya369.mp3", answer: "Aditya 369", hint: "A classic science-fiction film involving a time machine." },
+            { file: "songs/balakrishna/bhairavadweepam.mp3", answer: "Bhairava Dweepam", hint: "A high-fantasy film where a prince fights magical forces to rescue a princess." },
+            { file: "songs/balakrishna/gautamiputrasatakarni.mp3", answer: "Gautamiputra Satakarni", hint: "The actor's 100th film, a historical epic about a Satavahana ruler." },
+            { file: "songs/balakrishna/muddulamavayya.mp3", answer: "Muddula Mavayya", hint: "A classic action-drama where a brother seeks revenge for his sister's death." },
+            { file: "songs/balakrishna/lorrydriver.mp3", answer: "Lorry Driver", hint: "An action film where the hero stands up for the rights of fellow drivers." }
         ]
     },
     "Dhanush": {
@@ -436,6 +441,45 @@ const heroesData = {
             { file: "songs/suhas/familydrama.mp3", answer: "Family Drama", hint: "A dark thriller where he and his brother have sinister intentions." },
             { file: "songs/suhas/prasannavadanam.mp3", answer: "Prasanna Vadanam", hint: "A recent thriller where the protagonist suffers from face blindness." }
         ]
-    }
-};
+    },
+    "Manchu Manoj": {
+        image: 'photos/manoj.jpeg',
+        songs: [
+            { file: "songs/manchumanoj/donga_dongadi.mp3", answer: "Donga Dongadi", hint: "His debut film as a lead, a remake of the Tamil film 'Thiruda Thirudi'." },
+            { file: "songs/manchumanoj/bindaas.mp3", answer: "Bindaas", hint: "An action-comedy where the hero must live in his rival's house for a challenge." },
+            { file: "songs/manchumanoj/potugadu.mp3", answer: "Potugadu", hint: "A comedy-entertainer known for its chartbuster songs, a remake of a Kannada film." },
+            { file: "songs/manchumanoj/current_theega.mp3", answer: "Current Theega", hint: "An action-romance film also featuring Sunny Leone in a prominent role." },
+            { file: "songs/manchumanoj/nenu_meeku_telusa.mp3", answer: "Nenu Meeku Telusa?", hint: "A stylish thriller about a man who wakes up with no memory of his past." },
+            { file: "songs/manchumanoj/prayanam.mp3", answer: "Prayanam", hint: "A unique romantic film that takes place entirely within an airport." },
+            { file: "songs/manchumanoj/mr_nookayya.mp3", answer: "Mr. Nookayya", hint: "The hero, known as 'Nokia', gets entangled in a bank robbery and a kidnapping." },
+            { file: "songs/manchumanoj/uu_kodathara_ulikki_padathara.mp3", answer: "Uu Kodathara? Ulikki Padathara?", hint: "A fantasy action film set in the Gandharva Mahal, also featuring Balakrishna." }
+        ]
+    },
+    "Manchu Vishnu": {
+        image: 'photos/vishnu.jpeg',
+        songs: [
+            { file: "songs/manchuvishnu/vishnu.mp3", answer: "Vishnu", hint: "His action-packed debut film directed by Shaji Kailas." },
+            { file: "songs/manchuvishnu/dhee.mp3", answer: "Dhee", hint: "A blockbuster action-comedy where he challenges a gangster to win his sister's love." },
+            { file: "songs/manchuvishnu/denikaina_ready.mp3", answer: "Denikaina Ready", hint: "A comedy entertainer full of mistaken identities, centered around a family feud." },
+            { file: "songs/manchuvishnu/doosukeltha.mp3", answer: "Doosukeltha", hint: "An action-comedy where he protects a girl who is a key witness." },
+            { file: "songs/manchuvishnu/eedo_rakam_aado_rakam.mp3", answer: "Eedo Rakam Aado Rakam", hint: "A comedy of errors where two friends get entangled in a web of lies." },
+            { file: "songs/manchuvishnu/pandavulu_pandavulu_tummeda.mp3", answer: "Pandavulu Pandavulu Tummeda", hint: "A multi-starrer featuring the Manchu family in a story of love and reunion." },
+            { file: "songs/manchuvishnu/mosagallu.mp3", answer: "Mosagallu", hint: "Based on the true story of one of the biggest IT scams in the world." },
+            { file: "songs/manchuvishnu/ginna.mp3", answer: "Ginna", hint: "A recent horror-comedy entertainer set in a small town." }
+        ]
+    },
+    "Raj Tarun": {
+        image: 'photos/rajtharun.jpeg',
+        songs: [
+            { file: "songs/rajtharun/uyyala_jampala.mp3", answer: "Uyyala Jampala", hint: "His debut hit, a charming love story between childhood sweethearts in a village." },
+            { file: "songs/rajtharun/cinema_choopistha_mava.mp3", answer: "Cinema Choopistha Mava", hint: "The hero takes on a challenge to impress his lover's strict father." },
+            { file: "songs/rajtharun/kumari_21f.mp3", answer: "Kumari 21F", hint: "A bold romantic drama about a young couple dealing with trust issues, story by Sukumar." },
+            { file: "songs/rajtharun/eedo_rakam_aado_rakam.mp3", answer: "Eedo Rakam Aado Rakam", hint: "Co-starred with Manchu Vishnu in this hilarious comedy of errors." },
+            { file: "songs/rajtharun/andhhagadu.mp3", answer: "Andhhagadu", hint: "The hero, who pretends to be blind, gets entangled with a gangster." },
+            { file: "songs/rajtharun/lover.mp3", answer: "Lover", hint: "A romantic drama where the hero is a custom bike builder." },
+            { file: "songs/rajtharun/orey_bujjiga.mp3", answer: "Orey Bujjiga", hint: "A comedy of errors where a man and a woman, mistaken to have eloped, meet on the run." },
+            { file: "songs/rajtharun/anubhavinchu_raja.mp3", answer: "Anubhavinchu Raja", hint: "A comedy about a happy-go-lucky man who loves his village and cockfights." }
+        ]
+    },
 
+};
