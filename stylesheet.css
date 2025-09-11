@@ -306,6 +306,36 @@ p { color: var(--text-secondary); line-height: 1.6; }
     text-transform: uppercase;
     letter-spacing: 0.05em;
 }
+/* --- Corrected Hint Box Styling --- */
+
+/* This rule defines the final look AND the initial collapsed/invisible state */
+#hint-text {
+    /* Visual styles for when the box is open */
+    color: var(--primary-accent);
+    background-color: rgba(0, 20, 25, 0.5);
+    border: 1px solid rgba(0, 255, 195, 0.3);
+    text-shadow: 0 0 5px rgba(0, 255, 195, 0.5);
+    font-size: 1.1rem;
+    font-weight: 600;
+    border-radius: 8px;
+    text-align: center;
+    overflow: hidden; /* Important for the animation */
+
+    /* Animation and initial state (when empty) */
+    opacity: 0;
+    max-height: 0;
+    padding: 0 1rem; /* Keep side padding, but vertical padding is 0 */
+    margin-top: 0;
+    transition: all 0.4s ease-in-out; /* Animate all property changes */
+}
+
+/* This rule applies ONLY when the hint box has text content */
+#hint-text:not(:empty) {
+    opacity: 1; /* Fade it in */
+    max-height: 100px; /* Animate its height open */
+    padding: 0.75rem 1rem; /* Add back the vertical padding */
+    margin-top: 1.5rem; /* Add space above it */
+}
 
 /* Removes the old separator line */
 .stat-item:not(:last-child)::after {
