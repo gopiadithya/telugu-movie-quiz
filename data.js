@@ -240,7 +240,7 @@ const heroesData = {
         ]
     },
     "Siddharth": {
-        image: 'photos/siddharth.jpeg',
+        image: 'photos/Siddharth.jpeg',
         songs: [
             { file: "songs/siddharth/bommarillu.mp3", answer: "Bommarillu", hint: "A classic film about a father-son relationship." },
             { file: "songs/siddharth/nuvvostanante.mp3", answer: "Nuvvostanante Nenoddantana", hint: "The hero must prove his love by farming." },
@@ -438,3 +438,4 @@ const heroesData = {
         ]
     }
 };
+
