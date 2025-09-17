@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Guess the Movie</title> <link rel="stylesheet" href="stylesheet.css">
+</head>
+<body class="login-body">
+    <div class="background-animation">
+        <div class="shape">🎵</div>
+        <div class="shape">🎶</div>
+        <div class="shape">🎼</div>
+        <div class="shape">🎤</div>
+        <div class="shape">🎸</div>
+        <div class="shape">🥁</div>
+    </div>
+
+    <div class="main-container">
+        <div class="login-page-container">
+            <div class="login-showcase">
+                <div class="showcase-icon">🎵</div>
+                <h2>Guess the Telugu Movie</h2>
+                <p>Your ultimate Telugu movie music challenge.</p>
+            </div>
+    
+            <div class="login-form-wrapper">
+                <h1 class="login-logo">Create Account</h1>
+                <p class="login-subtitle">Join the challenge!</p>
+    
+                <form class="login-form">
+                    <input type="text" name="username" class="login-input" placeholder="Username" required>
+                    <input type="email" name="email" class="login-input" placeholder="Email" required>
+                    <input type="password" name="password" class="login-input" placeholder="Password" required minlength="6">
+                    <button type="submit" class="login-button">Sign Up</button>
+                </form>
+                
+                <div class="signup-link">
+                    <p>Already have an account? <a href="index.html">Log in</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script type="module" src="firebase-config.js"></script>
+    <script type="module" src="auth-signup.js"></script>
+</body>
+</html>

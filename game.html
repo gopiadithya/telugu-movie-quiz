@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Guess the Movie</title> <link rel="stylesheet" href="stylesheet.css">
+</head>
+<body>
+    <div class="background-animation">
+        <div class="shape">🎵</div>
+        <div class="shape">🎶</div>
+        <div class="shape">🎼</div>
+        <div class="shape">🎤</div>
+        <div class="shape">🎸</div>
+        <div class="shape">🥁</div>
+    </div>
+
+    <div class="nav-buttons">
+        <a href="heros.html" class="nav-button home-button" title="Home">🏠</a>
+        <a href="profile.html" class="nav-button profile-button" title="Profile">👤</a>
+    </div>
+
+    <div class="main-container">
+        <div class="game-container">
+            <h2 id="hero-title" style="font-size: 2rem; font-weight: 600; margin-bottom: 2rem;">Now playing...</h2>
+      
+            <div id="stats-container">
+                <div class="stat-item">
+                    <div class="stat-icon">🎯</div>
+                    <div>
+                        <span id="current-score" class="stat-value">0</span><br>
+                        <span class="stat-label">Score</span>
+                    </div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-icon">⏱️</div>
+                    <div>
+                        <span id="timer" class="stat-value timer-display">...</span><br>
+                        <span class="stat-label">Time Left</span>
+                    </div>
+                </div>
+                <div class="stat-item" id="high-score-item">
+                    <div class="stat-icon">👑</div>
+                    <div>
+                        <span id="high-score" class="stat-value">0</span><br>
+                        <span class="stat-label">High Score</span>
+                    </div>
+                </div>
+            </div>
+      
+            <audio id="game-audio"></audio>
+      
+            <div id="music-animation-container">
+                <div class="record"></div>
+            </div>
+      
+            <input type="text" id="guess-input" placeholder="Enter movie title..." class="guess-input">
+      
+            <div id="buttons-container">
+                <button id="guess-button" class="guess-button">Guess</button>
+                <button id="hint-button" class="hint-button">💡 Hint</button>
+            </div>
+      
+            <div id="hint-text"></div>
+            <div id="result-message"></div>
+        </div>
+    </div>
+
+    <div id="success-overlay" class="success-overlay">
+        <div class="success-content">
+            <h1 style="font-size: 4rem; font-family: 'Lobster', cursive; margin-bottom: 2rem;">Correct!</h1>
+            <div class="button-group">
+                <button id="play-random-hero-button" class="action-button play-random-hero">⚡ Play Random Hero</button>
+                <button id="select-another-hero-button" class="action-button select-another-hero">⬅️ Select Another Hero</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="data.js"></script>
+    <script type="module" src="game.js"></script>
+</body>
+</html>

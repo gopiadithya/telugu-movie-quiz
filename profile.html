@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Guess the Movie</title> <link rel="stylesheet" href="stylesheet.css">
+</head>
+<body>
+    <div class="background-animation">
+        <div class="shape">🎵</div>
+        <div class="shape">🎶</div>
+        <div class="shape">🎼</div>
+        <div class="shape">🎤</div>
+        <div class="shape">🎸</div>
+        <div class="shape">🥁</div>
+    </div>
+
+    <div class="nav-buttons">
+        <a href="heros.html" class="nav-button home-button" title="Home">🏠</a>
+        <span></span> </div>
+
+    <div class="main-container">
+        <h1 class="page-title">Your Profile</h1>
+
+        <div class="profile-card">
+            <div class="profile-header">
+                <label for="avatar-upload" style="cursor: pointer;" title="Change profile picture">
+                    <img src="photos/profile.jpg" alt="User Avatar" class="avatar" id="profile-avatar">
+                </label>
+                <input type="file" id="avatar-upload" accept="image/png, image/jpeg" style="display: none;">
+            </div>
+    
+            <div class="profile-body">
+                <div id="username-display-container">
+                    <h2 class="username" id="profile-username">Loading...</h2>
+                </div>
+                <p class="user-email" style="color: var(--text-secondary); margin-top: 0.5rem;">Loading...</p>
+            </div>
+    
+            <div class="profile-stats">
+                <div class="stat-item">
+                    <h3>High Score</h3>
+                    <p class="stat-value" id="high-score-display">0</p>
+                </div>
+                <div class="stat-item">
+                    <h3>Rank</h3>
+                    <p class="stat-value"># --</p>
+                </div>
+            </div>
+    
+            <div class="profile-footer">
+                <button id="logout-button" class="action-button logout-button">
+                    Logout
+                </button>
+            </div>
+        </div>
+    </div>
+    
+    <script type="module" src="profile.js"></script>
+</body>
+</html>
